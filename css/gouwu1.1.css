@@ -1,0 +1,56 @@
+body,table{
+	margin: 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.top1{
+	border-top: 1px black dotted;
+}
+#toptex{
+	font-family: "微软雅黑";
+	font-size: 20px;
+	font-weight: bold;
+}
+#toptex em{
+	color:#F4379B ;
+	font-style: initial;
+}
+#chima em{
+	font-weight: bold;
+	font-size: 20px;
+	font-style: initial;
+}
+.chimakuang{
+	  /*min-height: 360px;*/
+	  width: 100%;
+	  border: 1px black solid;
+}
+.chimapic{
+	padding-top: 1%;
+}
+.chimabiao em{
+	color: #F4379B;
+}
+.chimabiao ul{
+	list-style-type: none;
+}
+.chimabiao li{
+	padding-top: 30px;
+	font: "微软雅黑";
+	font-size: 20px;
+}
+.tijiao{
+	padding-left: 30%;
+	padding-top:6%;
+}
+.duizhao{
+	padding-top: 2%;
+	font-size: 18px;
+}
+.zhanshi{
+	padding-top: 20px;
+}
+.sppic{
+	padding-top: 30px;
+	padding-left: 15%;
+}

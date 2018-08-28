@@ -1,0 +1,114 @@
+.navbar-inverse .navbar-nav > li > a{
+	color: black;
+}
+.navbar-inverse .navbar-brand{
+	color:black;
+}
+.navbar-inverse .navbar-brand a:hover{
+	color:black;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+	color: #F10180;
+}
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus{
+	background-color: #F10180;
+}
+.dropdown-menu > li > a{
+	color: #F10180; 
+}
+.zjf{
+	height: 40px;
+	background-color:#F10180 ;
+}
+.zjwenzi{
+	padding-top: 6px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	font-size: 20px;
+	color: white;
+}
+.cenlcaidan{
+	height:400px;
+	padding-top: 26px;
+}
+.cenlcaidan ul{
+	list-style-type: none;
+}
+.cenlcaidan li{
+	padding-top: 5px;
+}
+.cenl{   /* bejingtu*/
+	padding-top: 26px;
+	
+	
+}
+.btn{
+	border-bottom: 1px black solid;
+	padding-left: 32px;
+}
+.baikaung{
+	height: 50px;
+	border-bottom: 1px black dotted;
+}
+.lianjie{
+	padding-top: 20px;
+	padding-left: 3%;
+}
+.lianjie a{
+	color: black;
+}
+.lianjie a:hover{
+	color:#F10180;
+}
+.dibudaohao li{
+	float: left;
+	padding-left: 3%;
+}
+.dibudaohao a{
+	color: black;
+	text-decoration: none;
+}
+.dibudaohao  a:hover{
+	border-bottom: 2px red solid;
+	color: #F10180;
+}
+
+.zuihou1{
+	padding-top: 10px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	background-color: lightpink;
+}
+.aa a{
+	color: black;
+}
+.zuiou2{
+	padding-top: 10px;
+	background-color: burlywood;
+}
+.dadakaung{
+	height: 500px;
+	border-bottom: 1px #F10180 solid;
+}
+.zjf a{
+	color: white;
+}
+.zjf a:hover{
+	background-color: red;
+}
+#topaaa ul{
+	list-style-type: none;
+}
+#topaaa li{
+	padding-top: 35px;
+	float: left;
+   padding-left: 3%;	
+}
+#topaaa{
+	border-bottom: 1px #E6E6E6 solid;
+}
+#topaaa a:hover{
+	background-color: red;
+}

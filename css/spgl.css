@@ -1,0 +1,24 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body,table,{
+	margin: 0px;
+	border: 0px;
+}
+.fenlei{
+	background-color: #F0F4F6;
+	height: 50px;
+}
+.aaaa{
+	border: 1px #EEEEEE solid;
+}
+.biao1{
+	padding-left: 6%;
+}
+.pagination{
+	padding-left: 350px;
+}
+.mm ul{
+	list-style-type: none;
+}

@@ -1,0 +1,64 @@
+body{
+	margin: 0px;
+}
+.navbar-default .navbar-nav > li > a{
+	color: #EB3190;
+}
+#xl1{
+	display: none;
+}
+#xl2{
+	display: none;
+}
+#xl3{
+	display: none;
+}
+#xl4{
+	display: none;
+}
+#xl5{
+	display: none;
+}
+.wenzi{
+	 padding-top: 20px;
+	font-size: 20px;
+	color: white;
+}
+
+#top1{
+	font-family: "微软雅黑";
+	font-size: 25px;
+	font-weight: bold;
+}
+.topbiao ul{
+	list-style-type: none;
+}
+.topbiao li{
+	float: left;
+	padding-left: 5%;
+	font-size: 18px;
+}
+.cl1 ul{
+	list-style-type: none;
+}
+.cl1 li{
+	padding-top: 20px;
+}
+.cl1{
+	background-color: #188AE2;
+	height: 956px;
+}
+.btn-default{
+	color: white;
+}
+.btn{
+	background-color:  #188AE2;
+	border: 0px;
+	font-size: 20px;
+}
+.btn:hover, .btn:focus, .btn.focus{
+	background-color:  #188AE2;
+}
+a{
+	color: white;
+}

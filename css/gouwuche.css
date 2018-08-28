@@ -1,0 +1,224 @@
+body{
+	margin: 0px;
+	background-color:white;
+	
+}
+#t1{
+	text-align: center;
+}	
+.miaoshapic{
+		height: 550px;
+	}
+#t1{
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 30px;
+	color: #E3007E;	
+	/*position: fixed;*/
+}
+.t3 li{
+	padding-left: 3%;
+}
+.an1{
+	padding-top: 3px;
+	color: white;
+	background-color: #F10180;
+	
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: gold;
+}
+.navbar-inverse .navbar-toggle{
+	border-color: white;
+}
+.top1{
+	text-align: center;
+}
+#aiqing{
+	color: red;
+	padding-top: 50px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 30px;
+	color: #E3007E;	
+}
+#sousuo{
+	padding-left: 20px;
+	padding-top: 10px;
+}
+#sousuo{
+	color:#E3007E;
+}
+.guanyu{
+	height: 30px;
+	background-color: #EAE8EB;
+}
+.kefu1{
+	width: 50%;
+}
+.text1{
+	padding-top: 5px;
+	padding-left: 5%;
+}
+.goumai{
+	padding-left: 5%;
+}
+
+.tuihuo1{
+	height: 60px;
+	width: 60%;
+	border: 1px red solid;
+}
+.guanyuwomen{
+	padding-top: 30px;
+	padding-left: 5%;
+}
+.xiaotubiao li{
+	float: left;
+	padding-top: 30px;
+	padding-left: 4%;
+	font-weight: bold;
+	font-family: "微软雅黑";font-size: 10px;
+	text-align: center;	
+	color: #8E8E8E;
+}
+.xiamian{
+	background-color: #EB3190;
+	padding-left: 4%;
+}
+
+.xiamian a {
+	color: white;
+}
+.xiamian li {
+		padding-left: 2%;
+}
+.xiamian a:hover {
+	color: red;
+}
+.gongan{
+	padding-left: 10%;
+}
+.gongan a:hover {
+	color: #EB3190;
+}
+.gongan ul{
+	list-style-type: none;	
+}
+.gongan a{
+	color: black;
+}
+.gongan li{
+	float: left;
+	padding-left: 1%;
+}
+.gongan1{
+	padding-left: 10%;
+}
+.gongan1 a:hover {
+	color: #EB3190;
+}
+.gongan1 ul{
+	list-style-type: none;	
+}
+.gongan1 a{
+	color: black;
+}
+.gongan1 li{
+	float: left;
+	padding-left:6%;
+}
+.gongan2{
+	padding-top: 10px;
+	padding-left: 15%;
+}
+.gongan2 a:hover {
+	color: #EB3190;
+}
+.gongan2 ul{
+	list-style-type: none;	
+}
+.gongan2 a{
+	color: black;
+}
+.gongan2 li{
+	float: left;
+	padding-left:1%;
+}
+.jiewei{
+	padding-top: 10px;
+}
+#rightBox1{
+	position: fixed;
+	top: 300px;
+	right: 10px;
+	background-color: #EB3190;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+	z-index: 10000000;
+}
+#rightBox2 {
+	position: fixed;
+	top: 350px;
+	right: 10px;
+	background-color: #EB3190;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+	z-index: 10000000;
+}
+#rightBox3 {
+	position: fixed;
+	top: 492px;
+	right: 10px;
+	background-color: #EB3190;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+	z-index: 10000000;
+}
+#rightBox4 {
+	position: fixed;
+	top: 399px;
+	right: 10px;
+	background-color: #EB3190;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+	z-index: 10000000;
+}
+#rightBox5 {
+	position: fixed;
+	top: 447px;
+	right: 10px;
+	background-color: #EB3190;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+	z-index: 10000000;
+}
+
+#youcepic a{
+	color:white ;
+}

@@ -1,0 +1,81 @@
+body{
+	margin: 0px;
+}
+.top{
+	padding-left: 3%;
+}
+.top a:hover {
+	color: #EB3190;
+}
+.top ul{
+	list-style-type: none;	
+}
+.top a{
+	color: black;
+}
+.top li{
+	float: left;
+	padding-left:1%;
+}
+.gouwucontext{
+	padding-top: 10px;
+	padding-left: 8%;
+}
+.chezuo{
+	height: 105px;
+	background-color:#FAF5F8 ;
+}
+#p1 em {
+	color:#F43499;
+	font-weight: bold;
+	font-size: 40px;
+}
+#p1{
+	font-size: 15px;
+}
+#p2 em {
+	color:#F43499;
+	font-weight: bold;
+	font-size: 25px;
+}
+.zhekou{
+	background-color:gold ;
+	color: white;
+	text-align: center;
+}
+.chewenzi ul{
+	list-style-type: none;
+}
+.chewenzi li{
+	padding-top: 15px;
+}
+.gouwudai{
+	
+	padding-left: 10%;
+}
+.anniu{
+	background-color: #F10180;
+	color: white;
+}
+#qianxunwenzi em{
+	color: gold;
+}
+.jinbi{
+	padding-top: 20px;
+}
+.xiahuanxian{
+	border-bottom: 1px #E6E6E6 dashed;
+}
+.tuihuan{
+	padding-top: 60px;
+	color: #F43499;
+}
+.xiangqingxian1 a{
+	color: red;
+}
+.xiangqingxian1 a:hover{
+	color: black;
+}
+.xiangqingxian1{
+	padding-left: 10%;
+}

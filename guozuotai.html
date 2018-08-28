@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>千寻工作台</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/gongzuot.css" />
+		<script src="js/echarts.min.js"></script>
+		<link rel="shortcut icon" href="p8.ico" type="image/x-icon">
+	</head>
+
+	<body>
+		<div class="container-fluid top">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12  col-lg-12 ">
+					<span class="glyphicon glyphicon-home" aria-hidden="true"></span> >> &nbsp;工作台
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid top">
+			<div class="row topbb">
+				<div class="col-xs-3 col-sm-3 col-md-3   col-lg-3 top1b">
+					<div class="row ">
+						<div class="col-xs-6 col-sm-6 col-md-6  col-lg-6 gk1">
+							<span class="glyphicon glyphicon-yen" aria-hidden="true"></span>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6  col-lg-6 gk2 ">
+							0
+						</div>
+					</div>
+					<div class="row ">
+						<div class="col-xs-12  col-sm-12 col-md-12  col-lg-12 gk3">
+							今日销售额
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-3 col-sm-3  col-md-3   col-lg-3  top2b" style="margin: auto;">
+					<div class="row ">
+						<div class="col-xs-6 col-sm-6 col-md-6  col-lg-6 gk1">
+							<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6  col-lg-6 gk2 ">
+							0
+						</div>
+					</div>
+					<div class="row ">
+						<div class="col-xs-12 col-sm-12 col-md-12  col-lg-12 gk3">
+							今日订单数
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-3  col-sm-3  col-md-3   col-lg-3  top3b">
+					<div class="row ">
+						<div class="col-xs-6 col-sm-6 col-md-6  col-lg-6 gk1">
+							<span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6  col-lg-6 gk2 ">
+							0
+						</div>
+					</div>
+					<div class="row ">
+						<div class="col-xs-12 col-sm-12 col-md-12  col-lg-12 gk3">
+							出售商品数
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3   col-lg-3  top4b">
+					<div class="row ">
+						<div class="col-xs-6 col-sm-6 col-md-6  col-lg-6 gk1">
+							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6  col-lg-6 gk2 ">
+							520
+						</div>
+					</div>
+					<div class="row ">
+						<div class="col-xs-12 col-sm-12 col-md-12  col-lg-12 gk3">
+							总会员数
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12  col-lg-12  cnrx" style="padding: 0px;">
+			<div id="main" style="width: 1000px;height:400px;"></div>
+			<script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('main'));
+
+				// 指定图表的配置项和数据
+				var option = {
+					title: {
+						text: '千寻一天销售额',
+						subtext: '不完全统计'
+					},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+							type: 'cross'
+						}
+					},
+					toolbox: {
+						show: true,
+						feature: {
+							saveAsImage: {}
+						}
+					},
+					xAxis: {
+						type: 'category',
+						boundaryGap: false,
+						data: ['00:00', '01:15', '02:30', '03:45', '05:00', '06:15', '07:30', '08:45', '10:00', '11:15', '12:30', '13:45', '15:00', '16:15', '17:30', '18:45', '20:00', '21:15', '22:30', '23:45']
+					},
+					yAxis: {
+						type: 'value',
+						axisLabel: {
+							formatter: '{value} W'
+						},
+						axisPointer: {
+							snap: true
+						}
+					},
+					visualMap: {
+						show: false,
+						dimension: 0,
+						pieces: [{
+							lte: 6,
+							color: 'green'
+						}, {
+							gt: 6,
+							lte: 8,
+							color: 'red'
+						}, {
+							gt: 8,
+							lte: 14,
+							color: 'green'
+						}, {
+							gt: 14,
+							lte: 17,
+							color: 'red'
+						}, {
+							gt: 17,
+							color: 'green'
+						}]
+					},
+					series: [{
+						name: '金额',
+						type: 'line',
+						smooth: true,
+						data: [300, 280, 250, 260, 270, 300, 550, 500, 400, 390, 380, 390, 400, 500, 600, 750, 800, 700, 600, 400],
+						markArea: {
+							data: [
+								[{
+									name: '早高峰',
+									xAxis: '07:30'
+								}, {
+									xAxis: '10:00'
+								}],
+								[{
+									name: '晚高峰',
+									xAxis: '17:30'
+								}, {
+									xAxis: '21:15'
+								}]
+							]
+						}
+					}]
+				};
+				myChart.setOption(option);
+			</script>
+		</div>
+		</div>
+		</div>
+		<div class="container-fluid" >
+			<div class="row ">
+				<div class="col-xs-12 col-sm-12 col-md-12   col-lg-12  " style="font-size: 23px;color: #2DA3FB;">
+				待处理
+				</div>
+				</div>
+				</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12   col-lg-12  " style="font-size: 23px;color: #2DA3FB;">
+					<div class="row  lili">
+						
+						<div class="col-xs-2 col-sm-2 col-md-2  col-lg-2  ">
+							<img src="gongzuotaipics/2.png" />
+							<a href="#"><p>待发货<br>1800</p></a>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2  col-lg-2  ">
+							<img src="gongzuotaipics/3.png" />
+							<a href="#"><p>待付款<br>2800</p></a>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2  col-lg-2  ">
+							<img src="gongzuotaipics/4.png" />
+							<a href="#"><p>退货退款<br>800</p></a>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2  col-lg-2  ">
+							<img src="gongzuotaipics/5.png" />
+							<a href="#"><p>库存预警<br>100</p></a>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2  col-lg-2  ">
+							<img src="gongzuotaipics/6.png" />
+							<a href="#"><p>商品咨询<br>2800</p></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12   col-lg-12  ">
+					常用菜单
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 col-sm-2 col-md-2   col-lg-2  ">
+					<a href="#"><img src="gongzuotaipics/10.png" /></a>
+					<p>商品发布</p>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2   col-lg-2  ">
+					<a href="#"><img src="gongzuotaipics/11.png" /></a>
+					<p>首页轮播图</p>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2   col-lg-2  ">
+					<a href="#"><img src="gongzuotaipics/12.png" /></a>
+					<p>优惠券</p>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2   col-lg-2  ">
+					<a href="#"><img src="gongzuotaipics/13.png" /></a>
+					<p>在线客服</p>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2   col-lg-2  ">
+					<a href="#"><img src="gongzuotaipics/14.png" /></a>
+					<p>文章发布</p>
+				</div>
+			</div>
+		</div>
+
+<div class="container-fluid">
+	
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6   col-lg-6 ">
+				    <input type="button" name="" id="" value="生成索引" / style="background-color: #188AE2;border-radius: 50px;">
+					<p>系统初始时必须生成索引。生成后可加快商品的搜索速度，减小访问数据库的压力。 索引只需要生成一次即可。</p>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6   col-lg-6 ">
+				    <div class="row">  
+				    	 <div class="col-xs-6 col-sm-6 col-md-6   col-lg-6 ">
+				    	 	<img src="gongzuotaipics/18.png"/>
+				    	  </div>
+				    	  <div class="col-xs-6 col-xs-pull-3 col-sm-6 col-md-pull-3 col-md-6 col-md-pull-3  col-lg-6 col-lg-pull-3 ">
+				    	 	 <p>当前系统版本:QX 单店版 5.0版</p>
+                                                       <p>  最  近登录时间:2018-04-10 10:52:18</p>
+                                                        <p>  内存:已用 371MB 剩余 245MB 最大 3531MB</p>
+				    	 	 </pre>
+				    	  </div>
+				     </div>
+					
+				</div>
+			
+		         
+		 </div>
+</div>
+
+
+
+
+
+	</body>
+	<script src=" js/jquery-3.3.1.js "></script>
+	<script src="js/bootstrap.js "></script>
+
+</html>

@@ -1,0 +1,35 @@
+ul{
+	list-style-type: none;
+}
+.lll li{
+	float: left;
+	padding-left: 5%;
+	font-size: 25px;
+	
+}
+.lll{
+	padding-top: 7px;
+
+}
+.lll{
+	background-color:#F10180; 
+}
+.lll a
+{color: white;}
+.btn{
+	color:white;
+	background-color:#F10180 ;
+}
+.nnn{
+	padding-top: 20px;
+}
+.nnn li{
+	padding-top: 6px;
+}
+.gg{
+	padding-top: 40px;
+}
+.gg li{
+float: left;
+padding-left: 2%;
+}

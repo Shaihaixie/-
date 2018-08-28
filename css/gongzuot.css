@@ -1,0 +1,97 @@
+body{
+	background-color: #F0F4F6;
+
+
+}
+.top1b{
+	height: 140px;
+	
+	background-color: #17D57E;
+	
+}
+.top2b{
+	height: 140px;
+	
+	background-color: #FEC92B;
+	
+}
+.top3b{
+	height: 140px;
+
+	background-color: #2DA3FB;
+	
+}
+.top4b{
+	height: 140px;
+	
+	background-color: #C172D8;
+	
+}
+.topbb{
+	padding-left: 5%;
+	
+}
+.gk1{
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	padding-top: 15px;
+	padding-left: 10%;
+}
+.gk2{
+	color: white;
+	font-weight: bold;
+	font-size:21px;
+	padding-top: 10px;
+	padding-right: 4%;
+}
+.gk3{
+	color: white;
+	font-weight: bold;
+	font-size:15px;
+	padding-top: 30px;
+	padding-left: 25%;
+}
+.huoche ul{
+	list-style-type: none;
+}
+.huoche li{
+	float: left;
+	padding-left: 5%;
+}
+.cnlx{
+	padding-top: 20px;
+	padding-left: 10%;
+}
+.huoche1 ul{
+	list-style-type: none;
+}
+.huoche1 li{
+	float: left;
+	padding-left: 2%;
+	color:#C0D9EC ;
+}
+.huoche3 ul{
+	list-style-type: none;
+}
+.huoche3 li{
+	float: left;
+	padding-left: 12%;
+	color:#C0D9EC ;
+}
+.huoche5 ul{
+	list-style-type: none;
+}
+.huoche5 li{
+	float: left;
+	padding-left:3%;
+	color:#C0D9EC ;
+	padding-top: 20px;
+	
+	
+}
+.lili{
+	border-bottom: 1px black solid;
+	padding-top: -3px;
+	background-color: white;
+}
